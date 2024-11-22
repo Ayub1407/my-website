@@ -1,0 +1,332 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    background-image: url(R.png);
+    background-size: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #0077ff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Services Section */
+section h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #0056cc;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.services li {
+    flex: 1 1 calc(30% - 20px); /* Three cards per row */
+    max-width: 300px;
+}
+
+.service-card {
+    background: linear-gradient(135deg, #0077ff, #00d4ff);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #e8f9ff;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #0056cc, #00aaff);
+}
+
+/* Contact Section */
+.contact {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Contact Links Wrapper */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Fully rounded buttons */
+    background: linear-gradient(135deg, #4CAF50, #0088cc); /* Gradient effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    transform: scale(1.1); /* Slight zoom */
+    background: linear-gradient(135deg, #006699, #0099cc);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding Shine Effect */
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: left 0.4s ease;
+}
+
+.button:hover::before {
+    left: 100%;
+}
+
+/* Telegram Button */
+.telegram {
+    background: linear-gradient(135deg, #0088cc, #00bfff);
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    background: linear-gradient(135deg, #25d366, #4caf50);
+}
+
+/* Contact Section */
+.contact {
+    margin: 50px 0;
+    text-align: center;
+    padding: 20px;
+    background: none; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact .logo {
+    max-width: 120px; /* Adjust logo size */
+    margin-bottom: 20px; /* Add space below the logo */
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Contact Links Wrapper */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Fully rounded buttons */
+    background: linear-gradient(135deg, #b4d3ff, #0088cc); /* Gradient effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    transform: scale(1.1); /* Slight zoom */
+    background: linear-gradient(135deg, #006699, #0099cc);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding Shine Effect */
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: left 0.4s ease;
+}
+
+.button:hover::before {
+    left: 100%;
+}
+
+/* Telegram Button */
+.telegram {
+    background: linear-gradient(135deg, #0088cc, #00bfff);
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    background: linear-gradient(135deg, #25d366, #4caf50);
+}
+h2{
+    color: #ffffff;
+}
+
+/* Mobile Styles (For screens smaller than 768px) */
+@media (max-width: 1080px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+        background-image: url(desktop-wallpaper-mobile-shanghai-tower.jpg);
+        background-size: 1080px 1920px;
+    }
+
+    .qwerty{
+        width: 75px;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-links {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .contact-links .button {
+        width: 100%; /* Make buttons full-width */
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        max-width: 80px; /* Resize logo for mobile */
+        margin-bottom: 10px;
+    }
+}
+
+/* Small Mobile Devices (For screens smaller than 480px) */
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-links .button {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+}
